@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>中国象棋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>中国象棋</h1>
+        <div class="game-info">
+            <div class="turn-indicator">
+                <div class="piece-preview red-piece">帥</div>
+                <div id="status" class="status">红方回合</div>
+            </div>
+            <button id="restart" class="restart-btn">重新开始</button>
+        </div>
+        <div class="game-layout">
+            <div class="captured-panel">
+                <div class="captured-section">
+                    <h3>红方吃子</h3>
+                    <div id="red-captured" class="captured-pieces"></div>
+                </div>
+                <div class="captured-section">
+                    <h3>黑方吃子</h3>
+                    <div id="black-captured" class="captured-pieces"></div>
+                </div>
+            </div>
+            <div id="board" class="board">
+                <div class="board-lines"></div>
+                <div class="pieces-container"></div>
+            </div>
+            <div class="rules-panel">
+                <h2>特殊规则说明</h2>
+                <ul>
+                    <li>🐎 马可以自由移动，没有蹩马腿限制</li>
+                    <li>🔄 可以吃掉己方的棋子</li>
+                    <li>👑 将帅可以在整个棋盘移动</li>
+                    <li>🔹 士可以在整个棋盘斜行</li>
+                    <li>🔸 相/象可以过河移动</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
